@@ -38,7 +38,7 @@ dispatcher.add_handler(s_handler)
 
 # Help
 def h(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Usage: /sh cmd")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Usage: /s cmd")
 help_handler = CommandHandler('h', h)
 dispatcher.add_handler(help_handler)
 
@@ -52,7 +52,7 @@ dispatcher.add_handler(q_handler)
 # WTF
 def unknown(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="Wrong Command!")
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Type '/sh command'.")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Type '/s command'.")
 unknown_handler = MessageHandler(Filters.command, unknown)
 dispatcher.add_handler(unknown_handler)
 
