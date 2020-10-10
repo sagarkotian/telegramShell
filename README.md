@@ -2,7 +2,7 @@
 A Telegram Bot to execute Linux &amp; Windows OS commands remotely using Telegram Messenger.
 
 ## Requirement
-`code` python3 -m pip install python-telegram-bot
+`python3 -m pip install python-telegram-bot`
 
 ## Setup
 1. Search and select *@BotFather* in your Telegram Messenger App.
@@ -15,7 +15,7 @@ A Telegram Bot to execute Linux &amp; Windows OS commands remotely using Telegra
   
 ## Usage
 Server:
-`code` python3 telegramShell.py
+`python3 telegramShell.py`
 
 Commands:
 - /h - Help
